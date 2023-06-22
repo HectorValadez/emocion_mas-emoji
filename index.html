@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emociones</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imageedit_1_6560282034.png" type="image/x-icon">
+</head>
+<body>
+    <div class="col-lg-8 col-md-8">
+        <h1>Emocion mas emoji 😁 😑  🤔 😡 😧 🤨</h1>
+        <span>
+            Estas son las emociones que te pueden tocar:
+            <hr>
+            felicidad 😁
+            <hr>
+            serio 😑
+            <hr>
+            pensativo 🤨
+            <hr>
+            la roca 🤔
+            <hr>
+            enojado 😡
+            <hr>
+            sorprendido 😧
+        </span>
+    </div>
+    <div class="col-lg-4 derecha col-md-4" >
+        
+        <div id="camara"></div>
+        <br>
+        <button onclick="tijera()">Tomar foto</button>
+        <br>
+        <br>
+        <div id="cara"></div>
+        <br>
+        <button onclick="papel()">La roca o emocion</button>
+    </div>
+    <div class="pizza">
+        <h2 id="emocion">feliz o roca</h2>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
